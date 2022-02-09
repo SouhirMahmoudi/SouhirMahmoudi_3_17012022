@@ -1,0 +1,52 @@
+footer {
+  background-color: $background3;
+  color: white;
+  @include tablet-only{
+    text-align: center;
+  }
+  @include desktop-only{
+    text-align: center;
+  }
+
+  h4 {
+    margin: 0px;
+    padding-left: 25px;
+    padding-top: 26px;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 0px;
+    padding-bottom: 38px;
+  }
+
+  li {
+    display: flex;
+    padding-left: 25px;
+    list-style: none;
+    font-size: 16px;
+    padding-bottom: 9px;
+
+    @include tablet-only{
+    justify-content: center;
+  }
+  @include desktop-only{
+    justify-content: center;
+  }
+}
+
+  .one::before {
+    content: "\f2e7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    width: 24px;
+  }
+  .two::before {
+    content: "\f4c4";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    width: 24px;
+  }
+
+}

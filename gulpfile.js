@@ -11,6 +11,7 @@ const autoprefixer = require('gulp-autoprefixer');
 function buildStyles() {
     return gulp.src([
         './sass/base.scss',
+        './sass/mixin.scss',
         './sass/**/*.scss'
     ])
         .pipe(sourcemaps.init())

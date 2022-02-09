@@ -1,0 +1,16 @@
+button.special {
+  background: linear-gradient(350deg, $Primaire 0%, $Secondaire 100%);
+  width: 218px;
+  height: 50px;
+  margin-bottom: 57px;
+  border-radius: 25px;
+  font-size: 15px;
+  @include ombre;
+  border: none;
+  color: white;
+  transition: all 1s;
+  &:hover{
+      background: linear-gradient(350deg, lighten($Primaire, 5%) 0%, lighten($Secondaire,5%) 100%);
+      box-shadow: 1px 5px 14px 3px #2c2b2bf5;
+  }
+}

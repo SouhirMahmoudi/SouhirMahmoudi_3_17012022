@@ -1,0 +1,39 @@
+.entete {
+  .localisation {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #bfbfbf75;
+    input {
+      border: none;
+      width: 109px;
+      background-color: #bfbfbf0f;
+      padding-left: 15px;
+      font-size: 14px;
+    }
+    &::before {
+      content: "\f3c5";
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .titre{
+    text-align: center;
+    background-color: $background2;
+  }
+  h1 {
+    font-size: 23px;
+    margin: 0 auto 0 auto;
+    width: 228px;
+    padding-top: 43px;
+  }
+  p {
+    margin-top: 22px;
+    margin-bottom: 32px;
+    font-size: 17px;
+    font-weight: lighter;
+  }
+}

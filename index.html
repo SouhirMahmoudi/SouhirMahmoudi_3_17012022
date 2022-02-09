@@ -1,14 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Trouvez les meilleurs restaurants luxueux à Paris avec ohmyfood, Composez vos repas et commandez les en ligne en 1 click ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ohmyfood</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap');
+    </style>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
 </head>
+
 <body>
-    <button> test2 </button>
-    <h1>test</h1>
+    <header>
+        <img src="images/logo/ohmyfood.png">
+    </header>
+    <main>
+    <section class="entete">
+        <div class="localisation">
+            <input type="text" value="Paris, Belleville">
+        </div>
+        <div class="titre">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <button class="special">Explorer nos restaurants</button>
+        </div>
+    </section>
+    <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <div class="boutons">
+            <button class="btn one">
+                <div>Choisissez un restaurant</div>
+            </button>
+            <button class="btn two">
+                <div>Composez votre menu</div>
+            </button>
+            <button class="btn three">
+                <div>Dégustez au restaurant</div>
+            </button>
+        </div>
+    </section>
+    <section class="restaurants">
+        <h2>Restaurants</h2>
+        <div class="articles">
+            <article>
+                <img src="images/restaurants/la_palette_du_gout.jpg">
+                <div class="container">
+                    <div class="description">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <button class="coeur"></button>
+                </div>
+                <aside>Nouveau</aside>
+            </article>
+            <article>
+                <img src="images/restaurants/la_note_enchantee.jpg">
+                <div class="container">
+                    <div class="description">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
+                    <button class="coeur"></button>
+                </div>
+                <aside>Nouveau</aside>
+            </article>
+            <article>
+                <img src="images/restaurants/a_la_francaise.jpg">
+                <div class="container">
+                    <div class="description">
+                        <h3>A la française</h3>
+                        <p>Cité rouge</p>
+                    </div>
+                    <button class="coeur"></button>
+                </div>
+            </article>
+            <article>
+                <img src="images/restaurants/le_delice_du_sens.jpg">
+                <div class="container">
+                    <div class="description">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <button class="coeur"></button>
+                </div>
+            </article>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <h4>ohmyfood</h4>
+        <ul>
+            <li class="one">Proposez un restaurant</li>
+            <li class="two">Devenir partenaire</li>
+            <li>Mentions légales</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
 </body>
+
 </html>

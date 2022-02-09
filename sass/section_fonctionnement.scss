@@ -1,0 +1,83 @@
+.fonctionnement {
+  margin: 15px;
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    @include tablet-only {
+      text-align: center;
+    }
+    @include desktop-only {
+      text-align: center;
+    }
+  }
+  .boutons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include desktop-only {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .btn {
+    height: 74px;
+    width: 330px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 5px 5px 13px 0px #808080a6;
+    transition: background .5s ease-in-out;
+    &:hover{
+      background-color: lighten($color: $Primaire, $amount: 30%);
+      div::before{
+        color: $Primaire !important;
+      }
+    }
+
+    div {
+      font-size: 15px;
+      font-weight: bold;
+      display: inline-flex;
+      transition: color .5s ease-in-out;
+    }
+
+    &::before {
+      display: inline-flex;
+      background-color: $Primaire;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      margin-left: -16px;
+    }
+    @for $i from 1 through 3 {
+      &:nth-of-type(#{$i})::before {
+        content: "#{$i}";
+      }
+    }
+    &.one div::before {
+      content: "\f3cd";
+      @include before;
+    }
+    &.two div::before {
+      content: "\f0ca";
+      @include before;
+    }
+    &.three div::before {
+      content: "\f3cd";
+      @include before;
+    }
+  }
+}

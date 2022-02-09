@@ -1,0 +1,97 @@
+.menu {
+  border-radius: 35px 35px 0 0;
+  background-color: $background2;
+  margin-top: -35px;
+  position: relative;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background2;
+    border-radius: 35px 35px 0 0;
+
+    button {
+      font-size: 23px;
+      display: inline-block;
+      border: none;
+      border-radius: 35px 35px 0 0;
+    }
+  }
+
+  #heart {
+    font-size: 23px;
+    margin-right: 25px;
+    display: inline-block;
+    border: none;
+    padding-top: 35px;
+  }
+
+  .entree {
+    @include menu;
+    button {
+      height: 67px;
+      width: 350px;
+      border-radius: 15px;
+    }
+   
+  }
+  aside{
+    padding-right: 23px;
+  }
+  .plats {
+    @include menu;
+  }
+  .desserts {
+    @include menu;
+  }
+  h1 {
+    font-size: 29px;
+    padding-left: 18px;
+    font-family: "Shrikhand";
+    font-weight: bolder;
+    margin: 0px;
+    padding-top: 35px;
+  }
+  h2 {
+    padding-left: 18px;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin: 0px;
+    padding-top: 35px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: $Tertiaire;
+      margin-top:8px;
+    }
+  }
+  h3 {
+    font-family: "Roboto";
+    margin: 0px;
+    font-size: 17px;
+    padding-left: 8px;
+    text-align: left;
+    width: 260px;
+  }
+  p {
+    font-size: 14px;
+    font-family: "Roboto";
+    margin: 0px;
+    padding-left: 8px;
+  }
+  .description {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .special.two {
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+}
