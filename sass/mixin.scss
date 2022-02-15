@@ -30,23 +30,52 @@
     justify-content: space-evenly;
     box-shadow: 5px 5px 13px 0px #808080a6;
     background-color: white;
+     
+    &:hover::after {
+      content: "\f058";
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      width: 60px;
+      height: 69px;
+      position: absolute;
+      margin-left: 284px;
+      border-radius: 0 15px 15px 0;
+      background-color: #99e2d0;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &:hover h3 {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          max-width:182px;
+        }
+      
+    &:hover p{
+          max-width: 205px;
+        }
+    &:hover .description{
+          width: 290px;
+        }
+      }
+   
+
     aside {
       font-weight: bold;
     }
   }
+
+
+@mixin tablet-only {
+  @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+    @content;
+  }
 }
 
-@mixin tablet-only{
-
-    @media screen and (min-width:$breakpoint-tablet) and (max-width:$breakpoint-desktop)
-     { @content; }
-    
-    }
-
-    @mixin desktop-only{
-
-      @media screen and (min-width:$breakpoint-desktop)
-       { @content; }
-      
-      }
-  
+@mixin desktop-only {
+  @media screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}

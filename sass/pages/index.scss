@@ -1,0 +1,55 @@
+body.index {
+  main {
+    animation: affichage 3s;
+  }
+  .load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: disparition 0s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    animation: affichage 0s;
+  }
+  .loading::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 10px solid $Secondaire;
+    border-top-color: $Primaire;
+    border-bottom-color: $Primaire;
+    border-radius: 50%;
+    animation: Loading 1s ease infinite;
+   
+  }
+  
+  @keyframes Loading {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  @keyframes disparition {
+    to {
+      transform: opacity(0);
+      visibility: hidden;
+    }
+  }
+
+  @keyframes affichage {
+    0% {
+      transform: translateY(-9999px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

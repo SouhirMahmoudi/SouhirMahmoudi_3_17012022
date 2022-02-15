@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        .btn {
+            width: 250px;
+            display: flex;
+            background-color: white;
+            border: none;
+            border-radius: .5rem;
+            margin: 0;
+            padding: 0;
+            align-self: stretch;
+            height: 45px;
+        }
+
+        .btn h3,
+        .btn p {
+            margin: 0;
+            /* Les deux règles suivantes sont nécessaires pour text-overflow */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            text-align: left;
+        }
+
+        .btn .plat {
+            width: 196px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            margin-left: 1rem;
+            transition: width 1s;
+        }
+
+        .btn .check {
+            width: 0;
+            overflow: hidden;
+            background-color: red;
+            transition: width 1s;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 .5rem .5rem 0;
+           
+
+        }
+        .btn:hover .far{
+            animation: Loading 1s;
+            animation-fill-mode: forwards;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes Loading {
+            to {
+                transform: rotate(2turn);
+            }
+        }
+
+        .btn aside {
+            width: 3rem;
+            height: 85%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .btn:hover .check {
+            width: 3rem;
+        }
+
+        .btn:hover .plat {
+            width: calc(196px - 3rem);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">
+        <div class="plat">
+            <h3>Tartare de poulpe acidulé</h3>
+            <p>Aux zestes d'orange</p>
+        </div>
+        <aside>25€</aside>
+        <div class="check"><i class="far fa-heart"></i></div>
+    </button>
+</body>
+
+</html>

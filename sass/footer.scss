@@ -4,10 +4,7 @@ footer {
   @include tablet-only{
     text-align: center;
   }
-  @include desktop-only{
-    text-align: center;
-  }
-
+  
   h4 {
     margin: 0px;
     padding-left: 25px;
@@ -31,9 +28,7 @@ footer {
     @include tablet-only{
     justify-content: center;
   }
-  @include desktop-only{
-    justify-content: center;
-  }
+ 
 }
 
   .one::before {
