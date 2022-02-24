@@ -1,6 +1,9 @@
 footer {
   background-color: $background3;
   color: white;
+  a{
+    color:white;
+  }
   @include tablet-only{
     text-align: center;
   }

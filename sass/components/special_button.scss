@@ -5,7 +5,7 @@ button.special {
   margin-bottom: 57px;
   border-radius: 25px;
   font-size: 15px;
-  @include ombre;
+  box-shadow: 1px 5px 14px 3px #808080f5; 
   border: none;
   color: white;
   transition: all 1s;

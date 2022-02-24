@@ -1,0 +1,58 @@
+@keyframes scroll {
+    0% {
+      transform: translateY(30%);
+      opacity: 0;
+    }
+    25% {
+      transform: translateY(20%);
+      opacity: 0.25;
+    }
+    50% {
+      transform: translateY(10%);
+      opacity: 0.5;
+    }
+    75% {
+      transform: translateY(5%);
+      opacity: 0.75;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes Loading {
+    to {
+      transform: rotate(2turn);
+    }
+  }
+
+  @keyframes animationCoeur {
+    from {
+      background-position-y: 0.9rem;
+    }
+    to {
+      background-position-y: -0.9rem;
+    }
+  }
+  @keyframes disparition {
+    to {
+      transform: opacity(0);
+      visibility: hidden;
+    }
+  }
+
+  @keyframes affichage {
+    0% {
+      transform: translateY(-9999px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes Loading {
+    to {
+      transform: rotate(1turn);
+    }
+  }

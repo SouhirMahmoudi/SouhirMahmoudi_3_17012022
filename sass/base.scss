@@ -1,3 +1,17 @@
+body {
+  margin: 0px;
+  font-family: "Roboto";
+
+  a {
+    text-decoration: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+
 $Primaire: #9356dc;
 $Secondaire: #ff79da;
 $Tertiaire: #99e2d0;
@@ -6,11 +20,3 @@ $background2: #eee;
 $background3: #322f2f;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 968px;
-body {
-  margin: 0px;
-  font-family: "Roboto";
-  button:hover{
-    cursor:pointer;
-  }
-}
-
