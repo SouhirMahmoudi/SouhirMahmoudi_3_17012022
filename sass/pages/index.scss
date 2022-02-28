@@ -114,11 +114,11 @@ body.index {
       transition: background 0.5s ease-in-out;
       &:hover {
         background-color: lighten($color: $Primaire, $amount: 30%);
-        div::before {
+        span::before {
           color: $Primaire !important;
         }
       }
-      div {
+      span {
         font-size: 15px;
         font-weight: bold;
         display: inline-flex;
@@ -140,15 +140,15 @@ body.index {
           content: "#{$i}";
         }
       }
-      &.one div::before {
+      &.one span::before {
         content: "\f3cd";
         @include before;
       }
-      &.two div::before {
+      &.two span::before {
         content: "\f0ca";
         @include before;
       }
-      &.three div::before {
+      &.three span::before {
         content: "\f3cd";
         @include before;
       }
