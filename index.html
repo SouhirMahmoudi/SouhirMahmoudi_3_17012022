@@ -11,7 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap');
     </style>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
 </head>
 
@@ -23,7 +23,7 @@
     </div>
     <main>
         <header>
-            <img src="images/logo/ohmyfood.png">
+            <img src="images/logo/ohmyfood.png" alt="logo du site ohmyfood">
         </header>
 
         <section class="entete">
@@ -40,60 +40,72 @@
             <h2>Fonctionnement</h2>
             <div class="boutons">
                 <button class="btn one">
-                    <div>Choisissez un restaurant</div>
+                    <span>Choisissez un restaurant</span>
                 </button>
                 <button class="btn two">
-                    <div>Composez votre menu</div>
+                    <span>Composez votre menu</span>
                 </button>
                 <button class="btn three">
-                    <div>Dégustez au restaurant</div>
+                    <span>Dégustez au restaurant</span>
                 </button>
             </div>
         </section>
         <section class="restaurants">
             <h2>Restaurants</h2>
             <div class="articles">
-                <a href="menu3.html">
-                    <article>
-                        <img src="images/restaurants/la_palette_du_gout.jpg">
-                        <div class="container">
+                <article>
+                    <a href="menu3.html">
+                        <img src="images/restaurants/la_palette_du_gout.jpg" alt="restaurant la palette du gout"></a>
+                    <div class="container">
+                        <a href="menu3.html">
                             <div class="description">
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
-                            </div>  </a>
-                            <button class="coeur"></button>
-                        </div> 
-                        <aside>Nouveau</aside>
-                    </article>
-               
-                <a href="menu2.html">  <article>
-                    <img src="images/restaurants/la_note_enchantee.jpg">
+                            </div>
+                        </a>
+                        <button class="coeur"></button>
+                    </div>
+                    <aside>Nouveau</aside>
+
+                </article>
+
+                <article>
+                    <a href="menu2.html">
+                        <img src="images/restaurants/la_note_enchantee.jpg" alt="restaurant la note enchantee"> </a>
                     <div class="container">
-                        <div class="description">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div></a>
+                        <a href="menu2.html">
+                            <div class="description">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                        </a>
                         <button class="coeur"></button>
                     </div>
                     <aside>Nouveau</aside>
                 </article>
-                <a href="menu1.html"> <article>
-                    <img src="images/restaurants/a_la_francaise.jpg">
+                <article>
+                    <a href="menu1.html">
+                        <img src="images/restaurants/a_la_francaise.jpg" alt="restaurant à la française"> </a>
                     <div class="container">
-                        <div class="description">
-                            <h3>A la française</h3>
-                            <p>Cité rouge</p>
-                        </div> </a>
+                        <a href="menu1.html">
+                            <div class="description">
+                                <h3>A la française</h3>
+                                <p>Cité rouge</p>
+                            </div>
+                        </a>
                         <button class="coeur"></button>
                     </div>
                 </article>
-                <a href="menu4.html">  <article>
-                    <img src="images/restaurants/le_delice_du_sens.jpg">
+                <article>
+                    <a href="menu4.html">
+                        <img src="images/restaurants/le_delice_du_sens.jpg" alt="restaurant le delice du sens"> </a>
                     <div class="container">
-                        <div class="description">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                        </div> </a>
+                        <a href="menu4.html">
+                            <div class="description">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                        </a>
                         <button class="coeur"></button>
                     </div>
                 </article>
@@ -106,9 +118,7 @@
             <li class="one">Proposez un restaurant</li>
             <li class="two">Devenir partenaire</li>
             <li>Mentions légales</li>
-            <a href="mailto:contact@ohmyfood.com">
-                <li>Contact</li>
-            </a>
+            <li><a href="mailto:contact@ohmyfood.com">Contact </a> </li>
         </ul>
     </footer>
 </body>
